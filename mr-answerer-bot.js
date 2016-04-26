@@ -3,6 +3,8 @@
 	var set_point = 210000;
     var current_point = $('.right').find('.number').html();
 
+    alert("test");
+
     var getQuestion = function()
 		{
 			return $('.qquestion')[0].childNodes[0].nodeValue.trim();
