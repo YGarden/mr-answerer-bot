@@ -1,9 +1,7 @@
 (function($)
 {
-	var set_point = 210000;
+	var set_point = 220000;
     var current_point = $('.right').find('.number').html();
-
-    alert("test");
 
     var getQuestion = function()
 		{
@@ -56,10 +54,7 @@
 			}
 		};
 
-    while (current_point < set_point) {
- 		$('.course-actions').find('a')[3].click();
-
-		setInterval(function()
+	var timerId = setInterval(function()
 		{
 			if($('.qquestion').length)
 			{
@@ -99,6 +94,15 @@
 				$('.next-icon').click();
 			}
 		}, 10);
+
+    while (current_point < set_point) {
+ 		$('.course-actions').find('a')[3].click();
+
+ 		while ($('#forest-banner').html() != undefined)
+ 		{
+ 			continue;
+ 		}
+		
 		$('.next_btn').click();
 		location.href="http://www.memrise.com/home/";
 		current_point = $('.right').find('.number').html();
