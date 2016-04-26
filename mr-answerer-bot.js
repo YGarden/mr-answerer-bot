@@ -97,17 +97,15 @@
 			}
 		}, 10);
 
-    while (1) {
-    	if (current_point > set point)
-    		return;
- 		while ($('#forest-banner').html() != undefined)
- 		{
- 			continue;
- 		}
-		
-		$('.next_btn').click();
-		location.href="http://www.memrise.com/home/";
-		current_point = $('.right').find('.number').html();
-		$('.course-actions').find('a')[3].click();
-	}
+	setInterval(function() {
+		if (location.href == "http://www.memrise.com/home/")
+		{
+			current_point = $('.right').find('.number').html();
+			$('.course-actions').find('a')[3].click();
+		} else if ($('#forest-banner').html() != undefined) {
+			$('.next_btn').click();
+			location.href="http://www.memrise.com/home/";
+		}
+	}, 10)
+
 })(jQuery);
