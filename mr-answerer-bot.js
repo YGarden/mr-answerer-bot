@@ -86,15 +86,15 @@
 				});
 			}
 
-			if ($('#forest-banner').html() != undefined)
+			return;
+		}
+
+		if ($('#forest-banner').html() != undefined)
 			{
 				$('.next_btn').click();
 				location.href="http://www.memrise.com/home/";
 			}
 
-
-			return;
-		}
 
 		if($('.next-icon').length) {
 			$('.next-icon').click();
