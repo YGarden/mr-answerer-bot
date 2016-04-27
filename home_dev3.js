@@ -48,6 +48,6 @@
 	}
 
 	if (current_point < parseInt(docCookies.getItem("set_point")))
-		$('.course-actions').find('a')[3].click();
+		$('.course-actions').find('a')[4].click();
 			
 })(jQuery);
