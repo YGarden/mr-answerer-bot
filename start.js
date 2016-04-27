@@ -1,4 +1,4 @@
-function($)
+(function($)
 {
 	var docCookies = {
 	  getItem: function (sKey) {
