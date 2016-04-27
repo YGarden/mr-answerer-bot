@@ -37,10 +37,12 @@
 	      return aKeys;
 	  }
 	};
+	location.href = "http://www.memrise.com";
+	location.reload();
 
 	var set_point = prompt("목표 점수를 입력하세요.");
 
-	if (docCookies.hasItem("set_point"))
+	if (docCookies.hasItem("set_point") || docCookies.getItem("set_point") == null)
 		docCookies.removeItem("set_point");
 	docCookies.setItem("set_point", set_point);
 
