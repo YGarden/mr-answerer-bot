@@ -1,7 +1,5 @@
 (function($)
 {
-	console.log("Developed by Jordan Doyle (https://doyle.wf)");
-	
 	var getQuestion = function()
 	{
 		return $('.qquestion')[0].childNodes[0].nodeValue.trim();
@@ -93,6 +91,7 @@
 			{
 				$('.next_btn').click();
 				location.href="http://www.memrise.com/home/";
+				location.reload();
 			}
 
 
