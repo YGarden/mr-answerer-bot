@@ -94,7 +94,7 @@
 
 		if ($('#forest-banner').html() != undefined)
 			{
-				$('.next_btn').click();
+				//$('.next_btn').click();
 				location.href="http://www.memrise.com/home/";
 				location.reload();
 			}
